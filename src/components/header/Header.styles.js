@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
     height: 100%;
-    display: flex;
+    display: block;
 `;
 
 export const DiscountContainer = styled.div`
@@ -40,8 +40,8 @@ export const IconWrap = styled.div`
 `;
 
 export const HeaderImage = styled.div`
-    margin-bottom: 100px;
-    height: 72px;
+    margin-bottom: 50px;
+    margin-top: 100px;
     width: 100%;
     background: #ffffff;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);

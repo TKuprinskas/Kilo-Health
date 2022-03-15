@@ -6,6 +6,7 @@ import {
     IconWrap,
 } from './Header.styles';
 import { Icon } from '@iconify/react';
+import logo from '../../assets/icons/Logo.png';
 
 const Header = (props) => {
     return (
@@ -19,7 +20,10 @@ const Header = (props) => {
                 </div>
             </DiscountContainer>
             <HeaderImage>
-                <img src={props.image} alt="header" />
+                <div>
+                    {' '}
+                    <img src={logo} alt="header" />
+                </div>
             </HeaderImage>
         </Container>
     );
