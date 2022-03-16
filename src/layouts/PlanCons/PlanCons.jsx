@@ -4,13 +4,11 @@ import ConsCard from '../../components/cards/ConsCard/ConsCard';
 import PriceCard from '../../components/cards/PriceCard/PriceCard';
 import {
     Container,
-    TitleWrapper,
     Title,
     LeftContainer,
     RightContainer,
     OrngText,
     Wrapper,
-    Subtitle,
 } from './PlanCons.styles';
 import { ConsList } from '../../content/ProgramConsList';
 import payments from '../../assets/icons/payments.png';
@@ -18,16 +16,12 @@ import payments from '../../assets/icons/payments.png';
 const PlanCons = (props) => {
     return (
         <Container>
-            <TitleWrapper>
-                <Subtitle>{props.subtitle}</Subtitle>
-                <Title>{props.title}</Title>
-            </TitleWrapper>
             <Wrapper>
                 <LeftContainer>
-                    <h3>
+                    <Title>
                         Choose your plan and get{' '}
                         <OrngText>7 days free trial</OrngText>
-                    </h3>
+                    </Title>
                     <PriceCard
                         title="6 month plan"
                         discount="50%"
@@ -67,7 +61,7 @@ const PlanCons = (props) => {
                     </div>
                 </LeftContainer>
                 <RightContainer>
-                    <h3>What's in my program?</h3>
+                    <Title>What's in my program?</Title>
                     {ConsList.map((item, index) => (
                         <ConsCard
                             key={index}

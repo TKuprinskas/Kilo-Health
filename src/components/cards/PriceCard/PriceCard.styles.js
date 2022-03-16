@@ -12,7 +12,8 @@ export const Container = styled.div`
     background: #ffffff;
     box-sizing: border-box;
     border-radius: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    margin-top: -6px;
     cursor: pointer;
     border: ${(props) =>
         props.border ? '2px solid #ff9b4e' : '2px solid rgba(0, 0, 0, 0.08)'};
