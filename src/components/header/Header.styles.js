@@ -88,10 +88,12 @@ export const Title = styled.div`
   color: #22222c;
   @media (max-width: 768px) {
     width: 95%;
-    height: 72px;
+    height: auto;
     font-size: 28px;
     line-height: 36px;
     color: #000000;
+    text-align: left;
+    margin-top: 8px;
   }
 `;
 
@@ -110,7 +112,8 @@ export const Subtitle = styled.div`
   color: #22222c;
   @media (max-width: 768px) {
     width: 95%;
-    height: 20px;
+    height: auto;
+    text-align: left;
   }
 `;
 
