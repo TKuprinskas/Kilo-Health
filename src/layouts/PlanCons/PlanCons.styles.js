@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin: 0 auto;
+    margin: 48px auto;
     align-items: center;
     padding: 0px;
     position: static;
@@ -11,12 +11,41 @@ export const Container = styled.div`
     top: 0px;
 `;
 
+export const Title = styled.div`
+    position: static;
+    width: 730px;
+    height: 56px;
+    left: calc(50% - 730px / 2);
+    top: calc(50% - 56px / 2 + 14px);
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    color: #22222c;
+`;
+
+export const Subtitle = styled.div`
+    position: static;
+    width: 343px;
+    height: 20px;
+    left: calc(50% - 343px / 2);
+    top: calc(50% - 20px / 2 - 32px);
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #22222c;
+`;
+
 export const LeftContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-
     position: static;
     width: 352px;
     height: 771px;
@@ -60,7 +89,7 @@ export const RightContainer = styled.div`
     bottom: 28.15%;
 `;
 
-export const PageTitle = styled.div`
+export const TitleWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;

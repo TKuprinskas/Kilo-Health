@@ -3,7 +3,11 @@ import { StyledButton } from './Button.styles';
 
 const ButtonComponent = (props) => {
     return (
-        <StyledButton onClick={props.onClick} disabled={props.disabled}>
+        <StyledButton
+            onClick={props.onClick}
+            disabled={props.disabled}
+            width={props.width}
+        >
             {props.children}
         </StyledButton>
     );

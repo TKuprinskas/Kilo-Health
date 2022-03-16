@@ -1,27 +1,27 @@
-import React, { useState } from 'react';
-import ButtonComponent from '../../components/button/Button';
+import React from 'react';
+import Button from '../../components/button/Button';
 import ConsCard from '../../components/cards/ConsCard/ConsCard';
 import PriceCard from '../../components/cards/PriceCard/PriceCard';
 import {
     Container,
-    PageTitle,
+    TitleWrapper,
+    Title,
     LeftContainer,
     RightContainer,
     OrngText,
     Wrapper,
+    Subtitle,
 } from './PlanCons.styles';
-import { ConsList } from '../../content/ConsList';
+import { ConsList } from '../../content/ProgramConsList';
 import payments from '../../assets/icons/payments.png';
 
-const PlanCons = () => {
+const PlanCons = (props) => {
     return (
         <Container>
-            <PageTitle>
-                <p>
-                    Over <strong>52 147</strong> plans ordered.
-                </p>
-                <h1>Get access to your yoga program now!</h1>
-            </PageTitle>
+            <TitleWrapper>
+                <Subtitle>{props.subtitle}</Subtitle>
+                <Title>{props.title}</Title>
+            </TitleWrapper>
             <Wrapper>
                 <LeftContainer>
                     <h3>
@@ -51,7 +51,7 @@ const PlanCons = () => {
                         month="/ month"
                         text="Billed monthly"
                     />
-                    <ButtonComponent size="lg">Get your plan</ButtonComponent>
+                    <Button width="352px">Get your plan</Button>
                     <p>
                         Your free trial will automatically become a paid
                         subscription on the 8th day after you begin your trial.

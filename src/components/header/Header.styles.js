@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
-    height: 100%;
-    display: block;
 `;
 
 export const DiscountContainer = styled.div`
@@ -39,10 +37,20 @@ export const IconWrap = styled.div`
     top: calc(50% - 26px / 2);
 `;
 
-export const HeaderImage = styled.div`
-    margin-bottom: 50px;
-    margin-top: 100px;
+export const HeaderContainer = styled.div`
+    margin: 56px auto;
+    height: 72px;
+    text-align: center;
     width: 100%;
     background: #ffffff;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
+`;
+
+export const ImgBox = styled.div`
+    height: 72px;
+    img {
+        width: 73.34px;
+        height: 32.08px;
+        margin-top: 20px;
+    }
 `;

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { Button } from 'react-bootstrap';
 
-export const StyledButton = styled(Button)`
+export const StyledButton = styled.button`
     background-color: #ff9b4e;
     border-radius: 8px;
     color: #fff;
@@ -9,7 +8,10 @@ export const StyledButton = styled(Button)`
     line-height: 24px;
     font-weight: 700;
     padding: 8px 40px 8px 40px;
-    width: 343px;
+    width: ${(props) => (props.width ? props.width : 'auto')};
     height: 56px;
     border: none;
+    &:hover {
+        background-color: #90caf9;
+    }
 `;

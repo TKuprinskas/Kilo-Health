@@ -46,6 +46,8 @@ const PriceCard = (props) => {
                 <Icon
                     icon={selected ? 'mdi:check-circle' : 'mdi:circle'}
                     color={selected ? '#ff9b4e' : '#000000'}
+                    width="26"
+                    height="26"
                 />
             </IconDiv>
         </Container>
