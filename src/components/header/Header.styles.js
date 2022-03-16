@@ -1,99 +1,117 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
+  width: 100%;
+  @media (max-width: 768px) {
+    width: 95%;
+  }
 `;
 
 export const DiscountContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 56px;
+  left: 0px;
+  top: 0px;
+  background: #90caf9;
+  p {
     position: absolute;
-    width: 100%;
-    height: 56px;
-    left: 0px;
-    top: 0px;
-    background: #90caf9;
-    p {
-        position: absolute;
-        width: 266px;
-        height: 20px;
-        left: calc(50% - 266px / 2 + 22px);
-        top: calc(50% - 20px / 2);
-        font-family: 'SF Pro Text';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 20px;
-        color: #ffffff;
-    }
+    width: 266px;
+    height: 20px;
+    left: calc(50% - 266px / 2 + 22px);
+    top: calc(50% - 20px / 2);
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+  }
 `;
 
 export const IconWrap = styled.div`
-    position: absolute;
-    width: 24x;
-    height: 24px;
-    left: calc(50% - 24px / 2 - 139px);
-    top: calc(50% - 26px / 2);
+  position: absolute;
+  width: 24x;
+  height: 24px;
+  left: calc(50% - 24px / 2 - 139px);
+  top: calc(50% - 26px / 2);
 `;
 
 export const HeaderContainer = styled.div`
-    margin: 56px auto;
-    height: 72px;
-    text-align: center;
-    width: 100%;
-    background: #ffffff;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
+  margin: 56px auto;
+  height: 72px;
+  text-align: center;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
 `;
 
 export const ImgBox = styled.div`
-    height: 72px;
-    img {
-        width: 73.34px;
-        height: 32.08px;
-        margin-top: 20px;
-    }
+  height: 72px;
+  img {
+    width: 73.34px;
+    height: 32.08px;
+    margin-top: 20px;
+  }
 `;
 
 export const TitleWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    margin: 0 auto;
-    position: static;
-    width: 730px;
-    height: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  margin: 0 auto;
+  position: static;
+  width: 730px;
+  height: 84px;
+  @media (max-width: 768px) {
+    width: 95%;
+    margin-bottom: 48px;
+  }
 `;
 
 export const Title = styled.div`
-    position: static;
-    width: 730px;
-    height: 56px;
-    left: calc(50% - 730px / 2);
-    top: calc(50% - 56px / 2 + 14px);
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 56px;
-    text-align: center;
-    color: #22222c;
+  position: static;
+  width: 730px;
+  height: 56px;
+  left: calc(50% - 730px / 2);
+  top: calc(50% - 56px / 2 + 14px);
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  color: #22222c;
+  @media (max-width: 768px) {
+    width: 95%;
+    height: 72px;
+    font-size: 28px;
+    line-height: 36px;
+    color: #000000;
+  }
 `;
 
 export const Subtitle = styled.div`
-    position: static;
-    width: 343px;
+  position: static;
+  width: 343px;
+  height: 20px;
+  left: calc(50% - 343px / 2);
+  top: calc(50% - 20px / 2 - 32px);
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #22222c;
+  @media (max-width: 768px) {
+    width: 95%;
     height: 20px;
-    left: calc(50% - 343px / 2);
-    top: calc(50% - 20px / 2 - 32px);
-    font-family: 'SF Pro Text';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #22222c;
+  }
 `;
 
 export const Wrapper = styled.div``;
