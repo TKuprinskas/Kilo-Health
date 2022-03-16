@@ -16,7 +16,7 @@ export const SuccessStories = [
         location: 'Los Angeles',
         img: img2,
         text: `I will be very straightforward - I hate sports and working out. 
-        ${(<b>Positive Yoga</b>)} put my physical activity to the next level. 
+        Positive Yoga put my physical activity to the next level. 
         I started to enjoy my morning yoga routines where I get my dose of cardio, resistance, and stretching in one place. 
         I could barely hold a plank at the beginning. Now I’m doing various yoga poses that looked impossible at first. 
         My body shape improved a lot and I am very motivated by both: results and the feeling of progress.`,
