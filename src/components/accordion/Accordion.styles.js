@@ -56,7 +56,7 @@ export const IconBox = styled.div``;
 export const Answer = styled.div`
   position: static;
   width: 704px;
-  height: 60px;
+  height: auto;
   left: 16px;
   top: 0px;
   font-family: "SF Pro Text";
@@ -68,7 +68,6 @@ export const Answer = styled.div`
   mix-blend-mode: normal;
   @media (max-width: 768px) {
     width: 95%;
-    height: auto;
   }
 `;
 
