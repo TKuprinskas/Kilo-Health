@@ -20,6 +20,12 @@ export const Container = styled.div`
         height: auto;
         margin-top: 0px;
     }
+    @media (max-width: ${breakpoints.md.max}) {
+        width: 100%;
+        height: auto;
+        margin-top: 48px;
+        justify-content: center;
+    }
 `;
 
 export const Title = styled.div`
@@ -109,6 +115,9 @@ export const LeftImgBox = styled.div`
     @media (max-width: ${breakpoints.sm.max}) {
         margin-top: 16px;
     }
+    @media (max-width: ${breakpoints.md.max}) {
+        margin-top: 8px;
+    }
 `;
 
 export const RightImgBox = styled.div`
@@ -120,6 +129,7 @@ export const RightImgBox = styled.div`
     @media (max-width: ${breakpoints.sm.max}) {
         margin-top: 48px;
     }
+    @media (max-width: ${breakpoints.md.max}) {
+        margin-top: 32px;
+    }
 `;
-
-export const Accent = styled.div``;

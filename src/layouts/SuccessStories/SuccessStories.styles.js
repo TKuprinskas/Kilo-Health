@@ -18,12 +18,22 @@ export const Container = styled.div`
         margin: 0 auto;
         margin-top: 24px;
     }
+    @media (max-width: ${breakpoints.md.max}) {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 48px;
+    }
 `;
 
 export const Wrapper = styled.div`
     display: flex;
     @media (max-width: ${breakpoints.sm.max}) {
         flex-direction: column;
+    }
+    @media (max-width: ${breakpoints.md.max}) {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 `;
 
@@ -42,8 +52,15 @@ export const Title = styled.div`
     text-align: center;
     color: #22222c;
     @media (max-width: ${breakpoints.sm.max}) {
+        width: 100%;
         font-size: 20px;
         line-height: 28px;
+    }
+    @media (max-width: ${breakpoints.md.max}) {
+        width: 100%;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
     }
 `;
 
@@ -53,5 +70,9 @@ export const BtnDiv = styled.div`
     @media (max-width: ${breakpoints.sm.max}) {
         margin-top: 32px;
         margin-bottom: 32px;
+    }
+    @media (max-width: ${breakpoints.md.max}) {
+        margin-top: 32px;
+        margin-bottom: 0px;
     }
 `;

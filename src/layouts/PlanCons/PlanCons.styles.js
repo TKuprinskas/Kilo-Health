@@ -10,7 +10,10 @@ export const Container = styled.div`
     left: 0px;
     top: 0px;
     @media (max-width: ${breakpoints.sm.max}) {
-        width: 95%;
+        width: 100%;
+    }
+    @media (max-width: ${breakpoints.md.max}) {
+        width: 100%;
     }
 `;
 
@@ -27,6 +30,14 @@ export const Title = styled.div`
         height: auto;
         font-size: 20px;
         line-height: 28px;
+    }
+    @media (max-width: ${breakpoints.md.max}) {
+        font-size: 24px;
+        line-height: 32px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 32px;
     }
 `;
 
@@ -81,6 +92,12 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-evenly;
     @media (max-width: ${breakpoints.sm.max}) {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    @media (max-width: ${breakpoints.md.max}) {
         margin: 0 auto;
         justify-content: center;
         align-items: center;

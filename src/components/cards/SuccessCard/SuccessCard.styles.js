@@ -21,6 +21,10 @@ export const Container = styled.div`
         margin: 0 auto;
         margin-bottom: 8px;
     }
+    @media (max-width: ${breakpoints.md.max}) {
+        height: auto;
+        margin-bottom: 16px;
+    }
 `;
 
 export const Wrapper = styled.div`

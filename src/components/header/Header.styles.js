@@ -6,6 +6,9 @@ export const Container = styled.div`
     @media (max-width: ${breakpoints.sm.max}) {
         width: 95%;
     }
+    @media (max-width: ${breakpoints.md.max}) {
+        width: 100%;
+    }
 `;
 
 export const DiscountContainer = styled.div`
@@ -48,7 +51,7 @@ export const HeaderContainer = styled.div`
     width: 100%;
     background: #ffffff;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
-    @media (max-width: 768px) {
+    @media (max-width: ${breakpoints.sm.max}) {
         margin-bottom: 16px;
     }
 `;
@@ -75,6 +78,10 @@ export const TitleWrapper = styled.div`
         width: 95%;
         margin-bottom: 48px;
     }
+    @media (max-width: ${breakpoints.md.max}) {
+        width: 100%;
+        height: auto;
+    }
 `;
 
 export const Title = styled.div`
@@ -99,6 +106,14 @@ export const Title = styled.div`
         text-align: left;
         margin-top: 8px;
     }
+    @media (max-width: ${breakpoints.md.max}) {
+        font-size: 32px;
+        line-height: 40px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 0px;
+    }
 `;
 
 export const Subtitle = styled.div`
@@ -118,5 +133,10 @@ export const Subtitle = styled.div`
         width: 95%;
         height: auto;
         text-align: left;
+    }
+    @media (max-width: ${breakpoints.md.max}) {
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
 `;
