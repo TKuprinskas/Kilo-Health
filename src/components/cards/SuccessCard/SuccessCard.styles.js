@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../../styles/styles';
 
 export const Container = styled.div`
     margin-right: 16px;
@@ -14,6 +15,12 @@ export const Container = styled.div`
     background: #ffffff;
     box-shadow: 0px 16px 32px rgba(57, 53, 60, 0.08);
     border-radius: 16px;
+    @media (max-width: ${breakpoints.sm.max}) {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -26,6 +33,10 @@ export const Wrapper = styled.div`
     height: 575px;
     left: 16px;
     top: 16px;
+    @media (max-width: ${breakpoints.sm.max}) {
+        width: 95%;
+        height: auto;
+    }
 `;
 
 export const Title = styled.div`
