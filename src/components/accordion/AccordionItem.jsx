@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import { Icon } from '@iconify/react'
 import {
   ItemContainer,
@@ -8,7 +9,7 @@ import {
   Answer,
 } from './Accordion.styles'
 
-const AccordionItem = ({ question, answer, key }) => {
+const AccordionItem = ({ question, answer }) => {
   const [isActive, setIsActive] = useState(false)
 
   return (
@@ -25,3 +26,8 @@ const AccordionItem = ({ question, answer, key }) => {
 }
 
 export default AccordionItem
+
+AccordionItem.propTypes = {
+  question: PropTypes.string.isRequired,
+  answer: PropTypes.string.isRequired,
+}
