@@ -120,5 +120,3 @@ export const Subtitle = styled.div`
         text-align: left;
     }
 `;
-
-export const Wrapper = styled.div``;
