@@ -1,6 +1,6 @@
-import React from "react";
-import { YogaConsList } from "../../content/YogaConsList";
-import { YogaCons } from "../../components/cards/YogaCons/YogaCons";
+import React from 'react'
+import { YogaConsList } from '../../content/YogaConsList'
+import { YogaCons } from '../../components/cards/YogaCons/YogaCons'
 import {
   Container,
   RightContainer,
@@ -10,9 +10,9 @@ import {
   RightImgBox,
   LeftBody,
   RightBody,
-} from "./Yoga.styles";
-import activity from "../../assets/images/activity.png";
-import articles from "../../assets/images/articles.png";
+} from './Yoga.styles'
+import activity from '../../assets/images/activity.png'
+import articles from '../../assets/images/articles.png'
 
 const YogaLayout = () => {
   return (
@@ -32,12 +32,12 @@ const YogaLayout = () => {
         <Title>Is Positive Yoga right for me?</Title>
         <RightBody>
           {YogaConsList.map((item, index) => {
-            return <YogaCons key={index} title={item.title} />;
+            return <YogaCons key={index} title={item.title} />
           })}
         </RightBody>
       </RightContainer>
     </Container>
-  );
-};
+  )
+}
 
-export default YogaLayout;
+export default YogaLayout
