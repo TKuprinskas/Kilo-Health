@@ -17,7 +17,6 @@ export const Container = styled.div`
     @media (max-width: ${breakpoints.xs.max}) {
         width: 95%;
         flex-direction: column;
-        align-items: center;
         height: auto;
         margin-top: 16px;
     }
@@ -54,7 +53,6 @@ export const Title = styled.div`
         line-height: 28px;
         width: 95%;
         margin: 0 auto;
-        text-align: center;
         margin-bottom: 8px;
     }
 `;

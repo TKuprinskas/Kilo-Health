@@ -33,6 +33,7 @@ export const Title = styled.div`
         height: auto;
         font-size: 20px;
         line-height: 28px;
+        text-align: left;
     }
     @media (max-width: ${breakpoints.sm.max}) {
         width: 95%;
@@ -103,6 +104,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-evenly;
     @media (max-width: ${breakpoints.xs.max}) {
+        width: 100%;
         justify-content: center;
         align-items: center;
         flex-direction: column;
