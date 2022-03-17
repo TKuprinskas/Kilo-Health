@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import { breakpoints } from '../../styles/styles';
 
 export const Container = styled.div`
-    width: 100%;
+    width: 1120px;
+    margin: 0 auto;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
+    }
     @media (max-width: ${breakpoints.sm.max}) {
         width: 95%;
     }
@@ -51,7 +55,7 @@ export const HeaderContainer = styled.div`
     width: 100%;
     background: #ffffff;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         margin-bottom: 16px;
     }
 `;
@@ -74,13 +78,13 @@ export const TitleWrapper = styled.div`
     position: static;
     width: 730px;
     height: 84px;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
+        margin-bottom: 24px;
+    }
     @media (max-width: ${breakpoints.sm.max}) {
         width: 95%;
-        margin-bottom: 48px;
-    }
-    @media (max-width: ${breakpoints.md.max}) {
-        width: 100%;
-        height: auto;
+        margin-bottom: 24px;
     }
 `;
 
@@ -97,7 +101,7 @@ export const Title = styled.div`
     line-height: 56px;
     text-align: center;
     color: #22222c;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 95%;
         height: auto;
         font-size: 28px;
@@ -106,13 +110,13 @@ export const Title = styled.div`
         text-align: left;
         margin-top: 8px;
     }
-    @media (max-width: ${breakpoints.md.max}) {
-        font-size: 32px;
-        line-height: 40px;
-        width: 100%;
+    @media (max-width: ${breakpoints.sm.max}) {
+        width: 95%;
         height: auto;
-        text-align: center;
-        margin-top: 0px;
+        font-size: 28px;
+        line-height: 36px;
+        color: #000000;
+        margin-top: 8px;
     }
 `;
 
@@ -129,14 +133,13 @@ export const Subtitle = styled.div`
     line-height: 20px;
     text-align: center;
     color: #22222c;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 95%;
         height: auto;
         text-align: left;
     }
-    @media (max-width: ${breakpoints.md.max}) {
-        width: 100%;
+    @media (max-width: ${breakpoints.sm.max}) {
+        width: 95%;
         height: auto;
-        text-align: center;
     }
 `;

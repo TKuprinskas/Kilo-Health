@@ -18,7 +18,7 @@ export const Container = styled.div`
     cursor: pointer;
     border: ${(props) =>
         props.border ? '2px solid #ff9b4e' : '2px solid rgba(0, 0, 0, 0.08)'};
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 100%;
         margin-top: 8px;
         margin-bottom: 8px;

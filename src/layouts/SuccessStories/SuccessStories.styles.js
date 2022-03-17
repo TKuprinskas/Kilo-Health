@@ -12,7 +12,7 @@ export const Container = styled.div`
     height: 663px;
     left: 65.5px;
     top: 935px;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 95%;
         height: auto;
         margin: 0 auto;
@@ -28,7 +28,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
     display: flex;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         flex-direction: column;
     }
     @media (max-width: ${breakpoints.md.max}) {
@@ -51,10 +51,16 @@ export const Title = styled.div`
     line-height: 32px;
     text-align: center;
     color: #22222c;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 100%;
         font-size: 20px;
         line-height: 28px;
+    }
+    @media (max-width: ${breakpoints.sm.max}) {
+        width: 95%;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
     }
     @media (max-width: ${breakpoints.md.max}) {
         width: 100%;
@@ -67,7 +73,7 @@ export const Title = styled.div`
 export const BtnDiv = styled.div`
     margin-top: 48px;
     margin-bottom: 48px;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         margin-top: 32px;
         margin-bottom: 32px;
     }

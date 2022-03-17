@@ -11,10 +11,16 @@ export const Container = styled.div`
     position: static;
     width: 343px;
     height: 48px;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
+        margin-top: 8px;
+        margin-bottom: 18px;
+    }
     @media (max-width: ${breakpoints.sm.max}) {
         width: 95%;
         margin-top: 8px;
         margin-bottom: 18px;
+        justify-content: center;
     }
 `;
 

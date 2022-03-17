@@ -15,7 +15,7 @@ export const Container = styled.div`
     background: #ffffff;
     box-shadow: 0px 16px 32px rgba(57, 53, 60, 0.08);
     border-radius: 16px;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 90%;
         height: auto;
         margin: 0 auto;
@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
     height: 575px;
     left: 16px;
     top: 16px;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 100%;
         height: auto;
     }

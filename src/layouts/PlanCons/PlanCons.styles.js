@@ -9,7 +9,10 @@ export const Container = styled.div`
     width: 1120px;
     left: 0px;
     top: 0px;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 100%;
+    }
+    @media (min-width: ${breakpoints.sm.min}) {
         width: 100%;
     }
     @media (max-width: ${breakpoints.md.max}) {
@@ -25,6 +28,12 @@ export const Title = styled.div`
     line-height: 32px;
     color: #22222c;
     margin-bottom: 8px;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
+        height: auto;
+        font-size: 20px;
+        line-height: 28px;
+    }
     @media (max-width: ${breakpoints.sm.max}) {
         width: 95%;
         height: auto;
@@ -32,12 +41,8 @@ export const Title = styled.div`
         line-height: 28px;
     }
     @media (max-width: ${breakpoints.md.max}) {
-        font-size: 24px;
-        line-height: 32px;
         width: 100%;
-        height: auto;
-        text-align: center;
-        margin-top: 32px;
+        margin-top: 8px;
     }
 `;
 
@@ -78,9 +83,14 @@ export const RightContainer = styled.div`
     right: 0.14%;
     top: 0%;
     bottom: 28.15%;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
+        margin-top: 24px;
+    }
     @media (max-width: ${breakpoints.sm.max}) {
         width: 95%;
         margin-top: 24px;
+        text-align: center;
     }
 `;
 
@@ -89,18 +99,19 @@ export const OrngText = styled.span`
 `;
 
 export const Wrapper = styled.div`
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    @media (max-width: ${breakpoints.sm.max}) {
-        margin: 0 auto;
+    @media (max-width: ${breakpoints.xs.max}) {
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    @media (max-width: ${breakpoints.md.max}) {
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
+    @media (max-width: ${breakpoints.sm.max}) {
         flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: ${breakpoints.md.max}) {
+        justify-content: space-evenly;
     }
 `;

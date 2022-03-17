@@ -7,9 +7,13 @@ export const Container = styled.div`
     position: static;
     width: 736px;
     margin-bottom: 20px;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 95%;
         margin-top: 24px;
+    }
+    @media (max-width: ${breakpoints.sm.max}) {
+        width: 95%;
+        margin-top: 48px;
     }
 `;
 
@@ -20,6 +24,11 @@ export const ItemContainer = styled.div`
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
     border-radius: 16px;
+    @media (max-width: ${breakpoints.xs.max}) {
+        margin: 0 auto;
+        margin-bottom: 8px;
+        width: 95%;
+    }
     @media (max-width: ${breakpoints.sm.max}) {
         margin: 0 auto;
         margin-bottom: 8px;
@@ -32,6 +41,9 @@ export const QuestionWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
+    }
     @media (max-width: ${breakpoints.sm.max}) {
         width: 95%;
     }
@@ -50,6 +62,16 @@ export const Question = styled.div`
     line-height: 24px;
     letter-spacing: -0.4px;
     color: #212121;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    @media (max-width: ${breakpoints.sm.max}) {
+        width: 95%;
+        font-size: 14px;
+        line-height: 20px;
+    }
 `;
 
 export const IconBox = styled.div``;
@@ -67,6 +89,9 @@ export const Answer = styled.div`
     line-height: 20px;
     color: #212121;
     mix-blend-mode: normal;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
+    }
     @media (max-width: ${breakpoints.sm.max}) {
         width: 95%;
     }
@@ -86,10 +111,15 @@ export const Title = styled.div`
     text-align: center;
     color: #22222c;
     margin-bottom: 8px;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 95%;
         text-align: left;
         margin-left: 8px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    @media (max-width: ${breakpoints.sm.max}) {
+        width: 95%;
         font-size: 20px;
         line-height: 28px;
     }
@@ -99,6 +129,10 @@ export const BtnDiv = styled.div`
     text-align: center;
     margin-top: 48px;
     margin-bottom: 48px;
+    @media (max-width: ${breakpoints.xs.max}) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
     @media (max-width: ${breakpoints.sm.max}) {
         margin-top: 32px;
         margin-bottom: 32px;

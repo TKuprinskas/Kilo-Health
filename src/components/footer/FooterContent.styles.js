@@ -10,12 +10,12 @@ export const TitleWrapper = styled.div`
     position: static;
     width: 730px;
     height: 84px;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 95%;
         height: auto;
     }
-    @media (max-width: ${breakpoints.md.max}) {
-        width: 100%;
+    @media (max-width: ${breakpoints.sm.max}) {
+        width: 95%;
         height: auto;
     }
 `;
@@ -33,14 +33,34 @@ export const Title = styled.div`
     line-height: 56px;
     text-align: center;
     color: #22222c;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 95%;
+        height: auto;
         font-size: 24px;
         line-height: 32px;
         text-align: left;
+        margin-bottom: 16px;
+    }
+    @media (max-width: ${breakpoints.sm.max}) {
+        width: 95%;
+        height: auto;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
     }
 `;
 
 export const Wrapper = styled.div`
+    width: 1120px;
+    margin: 0 auto;
     margin-bottom: 100px;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
+    }
+    @media (max-width: ${breakpoints.sm.max}) {
+        width: 95%;
+    }
+    @media (max-width: ${breakpoints.md.max}) {
+        width: 100%;
+    }
 `;

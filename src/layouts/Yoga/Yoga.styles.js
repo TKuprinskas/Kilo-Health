@@ -14,17 +14,24 @@ export const Container = styled.div`
     height: 422px;
     left: 193px;
     top: 1750px;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 16px;
+    }
     @media (max-width: ${breakpoints.sm.max}) {
         width: 95%;
         flex-direction: column;
+        align-items: center;
         height: auto;
-        margin-top: 0px;
+        margin-top: 16px;
     }
     @media (max-width: ${breakpoints.md.max}) {
         width: 100%;
-        height: auto;
-        margin-top: 48px;
         justify-content: center;
+        margin-top: 32px;
     }
 `;
 
@@ -36,10 +43,18 @@ export const Title = styled.div`
     line-height: 32px;
     color: #22222c;
     margin-bottom: 24px;
-    @media (max-width: ${breakpoints.sm.max}) {
-        margin-left: 8px;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
         font-size: 20px;
         line-height: 28px;
+        margin-bottom: 8px;
+    }
+    @media (max-width: ${breakpoints.sm.max}) {
+        font-size: 20px;
+        line-height: 28px;
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
         margin-bottom: 8px;
     }
 `;
@@ -52,6 +67,12 @@ export const LeftBody = styled.div`
     height: 366px;
     left: 0px;
     top: 56px;
+    @media (max-width: ${breakpoints.xs.max}) {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
     @media (max-width: ${breakpoints.sm.max}) {
         width: 95%;
         height: auto;
@@ -66,7 +87,7 @@ export const RightBody = styled.div`
     height: 366px;
     left: 0px;
     top: 56px;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 95%;
         height: auto;
         margin: 0 auto;
@@ -83,7 +104,7 @@ export const RightContainer = styled.div`
     height: 288px;
     left: 383px;
     top: 0px;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 95%;
         height: auto;
     }
@@ -99,7 +120,7 @@ export const LeftContainer = styled.div`
     height: 422px;
     left: 0px;
     top: 0px;
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         width: 95%;
         height: auto;
         margin-bottom: 24px;
@@ -107,12 +128,12 @@ export const LeftContainer = styled.div`
 `;
 
 export const LeftImgBox = styled.div`
-    margin-top: 38px;
+    margin-top: 16px;
     img {
         width: 157px;
         height: 325px;
     }
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         margin-top: 16px;
     }
     @media (max-width: ${breakpoints.md.max}) {
@@ -121,12 +142,12 @@ export const LeftImgBox = styled.div`
 `;
 
 export const RightImgBox = styled.div`
-    margin-top: 64px;
+    margin-top: 48px;
     img {
         width: 157px;
         height: 325px;
     }
-    @media (max-width: ${breakpoints.sm.max}) {
+    @media (max-width: ${breakpoints.xs.max}) {
         margin-top: 48px;
     }
     @media (max-width: ${breakpoints.md.max}) {
