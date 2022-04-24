@@ -1,9 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Icon } from '@iconify/react'
 import { Container, IconDiv, ContentDiv, Title } from './YogaCons.styles'
 
-export const YogaCons = (props) => {
+interface ConsCardProps {
+  title: string
+}
+
+export const YogaCons = (props: ConsCardProps) => {
   return (
     <Container>
       <IconDiv>
@@ -22,7 +25,3 @@ export const YogaCons = (props) => {
 }
 
 export default YogaCons
-
-YogaCons.propTypes = {
-  title: PropTypes.string.isRequired,
-}

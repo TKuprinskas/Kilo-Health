@@ -1,6 +1,6 @@
 import React from 'react'
-import { YogaConsList } from '../../content/YogaConsList'
-import { YogaCons } from '../../components/cards/YogaCons/YogaCons'
+import { YogaConsList } from 'content/YogaConsList'
+import { YogaCons } from 'components/cards/YogaCons/YogaCons'
 import {
   Container,
   RightContainer,
@@ -11,8 +11,8 @@ import {
   LeftBody,
   RightBody,
 } from './Yoga.styles'
-import activity from '../../assets/images/activity.png'
-import articles from '../../assets/images/articles.png'
+import activity from 'assets/images/activity.png'
+import articles from 'assets/images/articles.png'
 
 const YogaLayout = () => {
   return (

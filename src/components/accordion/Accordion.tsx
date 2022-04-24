@@ -1,15 +1,15 @@
 import React from 'react'
-import { AccordionItemsList } from '../../content/AccordionItemsList'
+import { AccordionItemsList } from 'content/AccordionItemsList'
 import AccordionItem from './AccordionItem'
 import { Container, Title, BtnDiv } from './Accordion.styles'
-import Button from '../../components/button/Button'
+import Button from 'components/button/Button'
 
 const Accordion = () => {
   return (
     <Container>
       <Title>Frequently Asked Questions</Title>
-      {AccordionItemsList.map(({ index, question, answer }) => (
-        <AccordionItem key={index} question={question} answer={answer} />
+      {AccordionItemsList.map(({ question, answer }) => (
+        <AccordionItem question={question} answer={answer} />
       ))}
       <BtnDiv>
         <Button width="343px">Get my plan</Button>

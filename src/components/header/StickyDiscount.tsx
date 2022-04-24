@@ -1,9 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { DiscountContainer, IconWrap } from './Header.styles'
 import { Icon } from '@iconify/react'
 
-const StickyDiscount = (props) => {
+interface Props {
+  text: string
+}
+
+const StickyDiscount = (props: Props) => {
   return (
     <DiscountContainer>
       <IconWrap>
@@ -17,7 +20,3 @@ const StickyDiscount = (props) => {
 }
 
 export default StickyDiscount
-
-StickyDiscount.propTypes = {
-  text: PropTypes.string.isRequired,
-}

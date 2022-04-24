@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoints } from '../../styles/styles'
+import { breakpoints } from 'styles/styles'
 
 export const TitleWrapper = styled.div`
   display: flex;

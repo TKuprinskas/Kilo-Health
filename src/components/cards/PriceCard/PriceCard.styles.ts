@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { breakpoints } from '../../../styles/styles'
+import { breakpoints } from 'styles/styles'
 
-export const Container = styled.div`
+export const Container = styled.div<{ border?: boolean }>`
   display: flex;
   justify-content: space-between;
   padding: 16px;
@@ -61,7 +61,7 @@ export const HeaderTitle = styled.div`
   color: #22222c;
 `
 
-export const HeaderDiscount = styled.div`
+export const HeaderDiscount = styled.div<{ display?: string }>`
   display: ${(props) => (props.display ? 'flex' : 'none')};
   flex-direction: row;
   justify-content: center;

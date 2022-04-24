@@ -9,7 +9,12 @@ import {
   Answer,
 } from './Accordion.styles'
 
-const AccordionItem = ({ question, answer }) => {
+interface AccordionItemProps {
+  question: string
+  answer: string
+}
+
+const AccordionItem = ({ question, answer }: AccordionItemProps) => {
   const [isActive, setIsActive] = useState(false)
 
   return (

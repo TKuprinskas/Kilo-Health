@@ -1,8 +1,8 @@
 import React from 'react'
-import SuccessCard from '../../components/cards/SuccessCard/SuccessCard'
-import { SuccessStories } from '../../content/SuccessStories'
+import SuccessCard from 'components/cards/SuccessCard/SuccessCard'
+import { SuccessStories } from 'content/SuccessStories'
 import { Container, Wrapper, Title, BtnDiv } from './SuccessStories.styles'
-import Button from '../../components/button/Button'
+import Button from 'components/button/Button'
 
 const SuccessStoriesLayout = () => {
   return (
@@ -10,13 +10,14 @@ const SuccessStoriesLayout = () => {
       <Title>Hear success stories from our clients</Title>
       <Wrapper>
         {SuccessStories.map((item, index) => {
+          const { title, text, location, img } = item
           return (
             <SuccessCard
               key={index}
-              title={item.title}
-              location={item.location}
-              img={item.img}
-              text={item.text}
+              title={title}
+              location={location}
+              img={img}
+              text={text}
             />
           )
         })}

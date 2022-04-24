@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, TitleWrapper, Title, Subtitle } from './Header.styles'
-import PlanCons from './../../layouts/PlanCons/PlanCons'
+import PlanCons from 'layouts/PlanCons/PlanCons'
 
 const HeadContent = () => {
   return (

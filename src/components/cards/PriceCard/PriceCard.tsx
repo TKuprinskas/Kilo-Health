@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Icon } from '@iconify/react'
 import {
   Container,
@@ -17,7 +16,20 @@ import {
   FooterText,
 } from './PriceCard.styles'
 
-const PriceCard = (props) => {
+interface Props {
+  onClick: () => void
+  selected: boolean
+  title: string
+  discount?: string
+  price: string
+  month: string
+  oldPrice?: string
+  totalPrice?: string
+  text: string
+  border?: boolean
+}
+
+const PriceCard = (props: Props) => {
   const {
     onClick,
     selected,
@@ -60,15 +72,3 @@ const PriceCard = (props) => {
 }
 
 export default PriceCard
-
-PriceCard.propTypes = {
-  onClick: PropTypes.func,
-  selected: PropTypes.bool,
-  title: PropTypes.string,
-  discount: PropTypes.string,
-  price: PropTypes.string,
-  month: PropTypes.string,
-  oldPrice: PropTypes.string,
-  totalPrice: PropTypes.string,
-  text: PropTypes.string,
-}

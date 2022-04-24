@@ -1,6 +1,6 @@
 import React from 'react'
 import { Wrapper, TitleWrapper, Title } from './FooterContent.styles'
-import PlanCons from './../../layouts/PlanCons/PlanCons'
+import PlanCons from 'layouts/PlanCons/PlanCons'
 
 const FooterContent = () => {
   return (

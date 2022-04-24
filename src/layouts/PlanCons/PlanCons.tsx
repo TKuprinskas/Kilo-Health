@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Button from '../../components/button/Button'
-import ConsCard from '../../components/cards/ConsCard/ConsCard'
-import PriceCard from '../../components/cards/PriceCard/PriceCard'
+import Button from 'components/button/Button'
+import ConsCard from 'components/cards/ConsCard/ConsCard'
+import PriceCard from 'components/cards/PriceCard/PriceCard'
 import {
   Container,
   Title,
@@ -10,13 +10,13 @@ import {
   OrngText,
   Wrapper,
 } from './PlanCons.styles'
-import { ConsList } from '../../content/ProgramConsList'
-import payments from '../../assets/icons/payments.png'
+import { ConsList } from 'content/ProgramConsList'
+import payments from 'assets/icons/payments.png'
 
 const PlanCons = () => {
-  const [selected, setSelected] = useState(null)
+  const [selected, setSelected] = useState(0)
 
-  const select = (id) => {
+  const select = (id: number) => {
     setSelected(id)
   }
 

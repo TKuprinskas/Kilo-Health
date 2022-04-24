@@ -1,10 +1,10 @@
-import tasks from '../assets/icons/tasks.png'
-import shoe from '../assets/icons/shoe.png'
-import bookcheck from '../assets/icons/bookcheck.png'
-import diet from '../assets/icons/diet.png'
-import exercise from '../assets/icons/exercise.png'
-import smartwatch from '../assets/icons/smartwatch.png'
-import whistle from '../assets/icons/whistle.png'
+import tasks from 'assets/icons/tasks.png'
+import shoe from 'assets/icons/shoe.png'
+import bookcheck from 'assets/icons/bookcheck.png'
+import diet from 'assets/icons/diet.png'
+import exercise from 'assets/icons/exercise.png'
+import smartwatch from 'assets/icons/smartwatch.png'
+import whistle from 'assets/icons/whistle.png'
 
 export const ConsList = [
   {
